@@ -39,7 +39,10 @@ namespace Membership
         private void button_Copy1_Click(object sender, RoutedEventArgs e)
         {
             if (user == null)
+            {
                 MessageBox.Show("not a member");
+                return;
+            }
 
             MessageBox.Show(user.Play());
         }
